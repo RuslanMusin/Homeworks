@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative_layout">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/event_image"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/event_image"
+        android:layout_toEndOf="@id/event_image"
+        android:id="@+id/event_name"
+        android:text="Лучшие лекции"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/event_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Лучшие лекции и так далее"
+        android:layout_toRightOf="@id/event_image"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/description"
+        android:background="@android:color/black"
+        ></View>
+
+
+
+
+</RelativeLayout>
